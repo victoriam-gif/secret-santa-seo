@@ -1,4 +1,4 @@
-DOCTYPE html>
+OCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -15,17 +15,16 @@ DOCTYPE html>
         }
         
         /* -------------------------------------------------------------
-        VARIABLES DE COULEURS POUR LA PERSONNALISATION
+        VARIABLES DE COULEURS POUR LA PERSONNALISATION (THÈME ÉPURÉ AVEC DOS VERT)
         -------------------------------------------------------------
-        Vous pouvez modifier les couleurs HEX ou les noms de couleurs Tailwind ici. 
-        Exemples : #FF00FF (Rose), #10b981 (Emerald Green), 'purple-700', 'yellow-400' 
+        Palette : Dos vert dégradé, Recto Anthracite/Gris.
         */
         :root {
-            --back-gradient-start: #008000; /* Début du dégradé du dos (Vert Émeraude) */
-            --back-gradient-end: #000000;   /* Fin du dégradé du dos (Vert Forêt) */
-            --back-border-color: #A9A9A9;   /* Couleur de la bordure du dos (Vert Clair/Menthe) */
-            --front-border-color: #4CAF50;  /* Couleur de la bordure du recto (Vert Émeraude) */
-            --footer-bg-color: #2e4a86;     /* Couleur du pied de carte (Gris très foncé, presque noir) */
+            --back-gradient-start: #008000; /* Début du dos (Vert Émeraude Rétabli) */
+            --back-gradient-end: #000000;   /* Fin du dos (Noir) */
+            --back-border-color: #A9A9A9;   /* Bordure du dos (Gris clair) */
+            --front-border-color: #1E293B;  /* Bordure du recto (Gris Anthracite) */
+            --footer-bg-color: #1E293B;     /* Fond du pied de carte (Gris Anthracite) */
             --main-font-color: #1f2937;     /* Couleur de texte principal (Gris foncé) */
         }
 
@@ -108,10 +107,10 @@ DOCTYPE html>
     <div class="max-w-7xl mx-auto">
         <header class="text-center mb-10 bg-white p-6 rounded-xl shadow-lg">
             <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600 mb-2">
-                Jeu de Cartes Persona SEO 🦸‍♀️
+                Le Jeu de Cartes des Personas de Diana
             </h1>
             <p class="text-xl text-gray-600">
-                L'outil stratégique de votre Secret Santa - Cliquez pour révéler le Persona !
+                Clique pour révéler le Persona !
             </p>
         </header>
 
@@ -130,58 +129,58 @@ DOCTYPE html>
                 client: 'La Bonne Brosse',
                 firstName: 'Camille',
                 age: 32,
-                name: 'Less but better 🌱',
-                type: 'Informational Seeker',
+                name: 'Less but better  ',
+                type: 'Minimaliste Premium',
                 profile: 'Cheveux ondulés, cuir chevelu sensible. Consommation premium, minimaliste. Lit des blogs beauté clean & bien-être.',
                 goal: 'Trouver une brosse durable, premium et adaptée aux cheveux ondulés/sensibles. Comprendre pourquoi certaines brosses irritent.',
                 pain: 'Trop de produits bas de gamme, infos contradictoires. Difficile de trouver des explications claires scientifiquement crédibles."',
                 contentStrategy: "Guides experts \"problème + solution\" (ex: \"Quelle brosse pour cuir chevelu sensible ?\"). Articles premium, focus matériaux & bénéfices réels. Comparatifs éditoriaux structurés.",
                 genaiStrategy: 'Schema HowTo/FAQ précis et complet pour être la source citée par l\'IA lors des requêtes "comment entretenir ses cheveux". E.E.A.T. fort sur la page A Propos pour la crédibilité.',
-                priorityScore: 85
+                priorityScore: 9
             },
             {
                 id: 'card2',
                 client: 'La Bonne Brosse',
-                firstName: 'Marc',
-                age: 26,
-                name: "L'Influenceur Pragmatique 📸",
-                type: 'Visual/Review Searcher',
-                profile: 'Créateur de contenu ou consommateur assidu des réseaux. Ne fait confiance qu\'aux avis et démonstrations réelles.',
-                goal: 'Valider la qualité du produit par des avis (E.E.A.T.) et voir les résultats en vidéo avant d\'acheter.',
-                pain: 'Manque de preuves sociales fiables et d\'avis vérifiés. Les images et vidéos de présentation sont trop "stock" et non réalistes.',
-                contentStrategy: 'Déployer le Schema Review pour les étoiles dans les SERP. Optimisation Vidéo SEO (YouTube et Short form). Mettre en avant l\'UGC (User Generated Content) directement sur les pages produits.',
-                genaiStrategy: 'Synthèse d\'avis structurés pour alimenter l\'IA. Veiller à ce que les vidéos soient correctement transcriptes et balisées pour le résumé vidéo par SGE.',
-                priorityScore: 78
+                firstName: 'Sarah',
+                age: 38,
+                name: "Beauty Research  ",
+                type: 'Maman Bien-Être',
+                profile: 'Cheveux fins et ceux de ses enfants souvent emmêlés. Suit des blogs famille, santé et beauté simple.',
+                goal: 'Comprendre comment démêler sans douleur, éviter la casse, adopter une routine rapide adaptée aux enfants.',
+                pain: 'Les routines trouvées en ligne sont longues ou inefficaces. Difficile de trouver des recommandations fiables selon type de cheveux (fins/enfants).',
+                contentStrategy: "Contenus pédagogiques courts : \"Meilleure brosse pour cheveux fins\", \"Comment démêler sans casser\". Tutoriels clair + infographies. Landing pages ciblées par problématique.",
+                genaiStrategy: "Créer des HowTo ultra détaillés pour occuper les réponses IA (ChatGPT/Perplexity) sur les requêtes parentales : \"comment demeler les cheveux d'un enfant\". FAQ 'longue traîne'",
+                priorityScore: 7
             },
 
             // --- Chopard (Joaillerie/Horlogerie de Luxe) ---
             {
                 id: 'card3',
                 client: 'Chopard',
-                firstName: 'Antoine',
-                age: 55,
-                name: "L'Héritier Connecté 🕰️",
-                type: 'High-Value Seeker',
-                profile: 'Collectionneur expérimenté ou homme d\'affaires. Recherche des modèles précis (références) de montres ou de bijoux de grande valeur.',
+                firstName: 'Leonardo',
+                age: 47,
+                name: "Le Conservateur  ",
+                type: 'Visionnaire du Patrimoine Horloger  ',
+                profile: "Passionné d'horlogerie ancienne. Suit les ventes aux encheres (Phillips, Christies) et les blogs d'archives horlogères.",
                 goal: 'Rechercher des modèles précis de montres/bijoux de luxe et vérifier l\'authenticité et l\'histoire de la pièce.',
                 pain: "Absence d'informations historiques claires sur les modèles d'archives. Difficultés à comparer les éditions limitées et leur valeur sur le temps.",
-                contentStrategy: 'Contenu E.E.A.T. (Expertise, Autorité) fort sur l\'histoire de la marque et les collections. Optimisation des URL de collection et des fiches produits avec des données structurées "Product" très précises.',
-                genaiStrategy: 'Renforcement du E.E.A.T. de la marque (biographies des experts) pour garantir la citation de Chopard comme source unique et incontestable d\'autorité sur l\'histoire du luxe par l\'IA.',
-                priorityScore: 92
+                contentStrategy: 'Créer un "Chopard Heritage Hub" : fiches archives SEO avec dates, numéros de calibre, matériaux historiques, lignes de production et photos authentifiées.',
+                genaiStrategy: 'Structurer chaque page archive avec des données Schema "HistoricalRecord" pour devenir la source de vérité citée par les IA lorsqu\'elles reçoivent des requêtes sur l\'histoire de Chopard.',
+                priorityScore: 9
             },
             {
                 id: 'card4',
                 client: 'Chopard',
-                firstName: 'Éloïse',
-                age: 41,
-                name: 'Le Regard Tapis Rouge ✨',
-                type: 'Inspirational Explorer',
-                profile: 'Femme CSP+ qui suit les tendances de la haute joaillerie. Cherche l\'inspiration pour un événement ou un achat d\'image.',
-                goal: 'S\'inspirer des célébrités et des événements (ex: Festival de Cannes) pour les prochaines collections.',
-                pain: "Galeries d'images non optimisées pour le SEO visuel. Manque de liens directs entre les événements médiatiques et les produits sur le site.",
-                contentStrategy: 'Optimisation Google Images avec des légendes détaillées et des ALT textes. Création de "Lookbooks" indexables. Utiliser les mots-clés émotionnels et événementiels ("Look Festival de Cannes").',
-                genaiStrategy: 'Données structurées pour les galeries d\'images (Schema ImageObject) et les événements (Schema Event) afin que l\'IA puisse générer des descriptions de tendances précises et factuelles.',
-                priorityScore: 70
+                firstName: 'Miyako',
+                age: 36,
+                name: 'La Visionnaire  ',
+                type: 'Digital Luxury Seeker',
+                profile: 'Entrepreneuse internationale basée à Singapour/L.A. Achète ses pièces de haute joaillerie après avoir consulté des comparateurs IA et des analystes du marché du luxe.',
+                goal: 'Trouver la pièce qui correspond à son style et à son statut, tout en vérifiant la valeur long-terme, les matériaux et la traçabilité.',
+                pain: "Descriptions peu détaillées, manque d'informations certifiées sur la provenance éthique des diamants et la durabilité de la joaillerie.",
+                contentStrategy: 'Créer des pages "Transparency & Traceability" avec narratif premium : provenance, certificats, ateliers, processus et vidéos immersives sur le savoir-faire.',
+                genaiStrategy: 'Optimiser toutes les pages Haute Joaillerie avec Schema "Jewelry" + "ProductCertification". Permettre aux moteurs IA d\'afficher Chopard comme marque "vérifiée, traçable et durable".',
+                priorityScore: 8
             },
             
             // --- Messika (Joaillerie de Luxe) ---
@@ -190,58 +189,58 @@ DOCTYPE html>
                 client: 'Messika',
                 firstName: 'Juliette',
                 age: 29,
-                name: 'La Future Mariée 💍',
+                name: 'La Future Mariée  ',
                 type: 'Local/Transactional Searcher',
                 profile: 'Jeune femme avec une intention d\'achat élevée pour une bague de fiançailles ou une alliance. Recherche des prix et des boutiques rapidement.',
                 goal: 'Trouver des bagues de fiançailles ou des alliances, souvent avec une intention d\'achat imminente et locale.',
                 pain: "Processus de personnalisation peu clair en ligne. Manque d'informations sur la disponibilité immédiate en boutique (Local Stock).",
                 contentStrategy: 'Renforcer le Local SEO (Google My Business, "bijouterie près de moi"). Créer des guides complets "Choisir sa bague" pour capter l\'intention en amont. Optimisation du tunnel de conversion.',
                 genaiStrategy: 'Mettre à disposition de l\'IA les données de localisation et de stock des boutiques via Schema LocalBusiness. Optimisation pour la recherche vocale (langage naturel) pour les requêtes locales.',
-                priorityScore: 95 // Priorité très haute, intention forte
+                priorityScore: 9 // Priorité très haute, intention forte
             },
             {
                 id: 'card6',
                 client: 'Messika',
                 firstName: 'Paul',
                 age: 38,
-                name: "L'Acheteur Dernière Minute 🏃",
-                type: 'Urgent Seeker',
-                profile: 'Homme pressé ayant oublié un anniversaire ou un événement important. Besoin d\'un achat rapide en ligne ou avec retrait express.',
-                goal: 'Trouver un cadeau de luxe rapidement, vérification des délais de livraison/retrait express.',
-                pain: "Information logistique peu visible ou complexe. Le site est lent à charger sur mobile, ce qui génère de la frustration.",
-                contentStrategy: "Optimisation de la vitesse de chargement (Core Web Vitals) sur mobile. Mise en avant claire des services de livraison express/Click & Collect dès la page catégorie. Balisage Schema \"Availability\" pour l'urgence.",
-                genaiStrategy: "Clarté et structuration des informations logistiques (délais, Click & Collect) pour les réponses instantanées de l'IA (Schema Delivery). L'IA doit pouvoir donner l'info directement.",
-                priorityScore: 80
+                name: "Le Gentleman  ",
+                type: 'Acheteur orienté cadeau',
+                profile: 'Homme actif, souvent urbain, cherchant un bijou Messika pour sa femme ou partenaire. Recherche rapide, valorise qualité et élégance.',
+                goal: 'Trouver le bijou parfait (bagues, bracelets ou colliers) comme cadeau, en respectant le style et les goûts de sa partenaire.',
+                pain: "Manque de conseils personnalisés pour choisir un bijou féminin. Difficulté à comparer styles, tailles, prix et disponibilité en boutique.",
+                contentStrategy: "Créer des guides 'Cadeau Messika pour elle' : recommandations selon âge, style, occasion. Vidéos et photos d’inspiration. Optimisation du tunnel de conversion pour achats rapides.",
+                genaiStrategy: "Fournir aux moteurs IA des données structurées 'Product' + 'LocalBusiness' pour disponibilité et prix. FAQ orientée cadeaux pour que l’IA recommande Messika comme choix sûr.",
+                priorityScore: 9
             },
             
             // --- Piaget (Horlogerie/Joaillerie de Luxe) ---
             {
                 id: 'card7',
                 client: 'Piaget',
-                firstName: 'Thibault',
+                firstName: 'Yves',
                 age: 61,
-                name: 'Le Collectionneur Expert 🧐',
-                type: 'Deep Knowledge Seeker',
-                profile: "Investisseur passionné par l'histoire horlogère. Recherche des détails techniques et des références d'archives introuvables ailleurs.",
-                goal: 'Rechercher des spécificités techniques (calibre, mouvement) et des pièces d\'archives pour l\'investissement.',
-                pain: 'Contenu trop grand public. Difficultés à trouver les références anciennes ou les schémas techniques pour valider l\'expertise.',
-                contentStrategy: "Création d'un glossaire technique et de pages \"Archive\" optimisées. Contenu d'autorité sur l'ingénierie Piaget pour le E.E.A.T.. Stratégie de backlinks spécialisés (forums, blogs horlogers).",
-                genaiStrategy: 'Balisage sémantique détaillé (Schema Product, Spécifications) sur les fiches produits pour que l\'IA puisse extraire des données techniques précises (calibres, mouvements) sans erreur.',
-                priorityScore: 88
+                name: 'Le Collectionneur  ',
+                type: 'Chercheur de connaissances approfondies',
+                profile: "Investisseur passionné d'horlogerie et de joaillerie historique. Suivi des ventes aux enchères, collectionneur de calibres rares, aime comprendre l’ingénierie et l’histoire des pièces.",
+                goal: 'Identifier des pièces rares, comprendre leurs mécanismes et évaluer leur valeur à long terme pour l’investissement.',
+                pain: 'Les contenus accessibles sont trop génériques. Difficulté à trouver des archives détaillées, des schémas techniques ou des informations certifiées.',
+                contentStrategy: "Créer un 'Piaget Heritage Hub' : pages archives avec schémas techniques, dates de production, calibres, éditions limitées. Glossaire spécialisé et articles E.E.A.T. détaillés.",
+                genaiStrategy: 'Balises Schema techniques (Product, TechnicalSpecifications, HistoricalRecord) pour que l’IA puisse extraire et citer des données fiables sur les pièces Piaget.',
+                priorityScore: 8
             },
             {
                 id: 'card8',
                 client: 'Piaget',
                 firstName: 'Claire',
                 age: 48,
-                name: 'La Célébration Discrète 🥂',
-                type: 'Gift Idea Seeker',
-                profile: 'Femme ou homme cherchant un cadeau pour un événement marquant (promotion, départ à la retraite, etc.) avec un budget conséquent.',
-                goal: 'Trouver des idées de cadeaux pour des occasions spéciales (anniversaire, promotion) et un public de luxe.',
-                pain: 'Manque de contenu "idée cadeau luxe" ou filtrage par prix/occasion dans la navigation. Ne sait pas par où commencer.',
-                contentStrategy: 'Création de Landing Pages thématiques (Ex: "Montre de luxe pour un départ à la retraite"). Amélioration des filtres de navigation pour pouvoir filtrer par "Occasion" ou "Cadeau".',
-                genaiStrategy: "Création de listes d'idées cadeaux très structurées et catégorisées pour faciliter les réponses de l'IA aux requêtes de type \"meilleur cadeau Piaget pour X euros\".",
-                priorityScore: 72
+                name: 'La Célébration  ',
+                type: 'Chercheuse d’idées cadeau',
+                profile: 'Femme cherchant un bijou ou une montre Piaget pour un événement marquant (promotion, anniversaire, retraite), avec un goût pour le luxe discret et raffiné.',
+                goal: 'Trouver le cadeau parfait pour une occasion spéciale, avec un bijou ou une montre qui exprime prestige et raffinement.',
+                pain: 'Manque de contenu ‘idée cadeau’ personnalisé. Difficulté à naviguer selon l’occasion, le style ou le budget. Peu d’éléments visuels concrets pour choisir.',
+                contentStrategy: 'Créer des landing pages thématiques par occasion et budget, lookbooks inspirants, guides visuels et vidéos explicatives. Optimisation UX pour filtrer par style, prix et occasion.',
+                genaiStrategy: "Fiches produits enrichies, listes structurées et Schema 'Product + Offer' pour que les IA recommandent rapidement des cadeaux adaptés aux requêtes utilisateurs.",
+                priorityScore: 7
             },
             
             // --- Vilebrequin (Maillots de Bain de Luxe) ---
@@ -250,28 +249,28 @@ DOCTYPE html>
                 client: 'Vilebrequin',
                 firstName: 'Alexandre',
                 age: 45,
-                name: 'Le Voyageur Préparé 🌴',
-                type: 'Seasonal/Destination Searcher',
+                name: 'Le Voyageur  ',
+                type: 'Recherches en fonction des destinations',
                 profile: 'Homme planifiant des vacances haut de gamme. Recherche le maillot idéal pour une destination spécifique (St-Barth, Mykonos).',
                 goal: 'Acheter le maillot parfait avant de partir en vacances, basé sur la destination, la coupe ou les matières.',
                 pain: "Difficulté à trouver des informations sur la durabilité ou les conseils de taille. Le contenu n'est pas assez lié aux destinations.",
-                contentStrategy: 'Contenu saisonnier ciblé (Ex: "Quel maillot Vilebrequin pour Dubaï ?"). Guides de taille détaillés (optimisation de l\'UX pour rassurer). Pages sur l\'engagement écologique et les matières.',
-                genaiStrategy: 'Contenu "destination + maillot" très structuré pour être cité par l\'IA lors de la planification de voyages ("Quel maillot prendre pour [Destination] ?").',
-                priorityScore: 77
+                contentStrategy: 'Contenu saisonnier ciblé (Ex: "Quel maillot Vilebrequin pour Saint-Barth ?"). Guides de taille détaillés (optimisation de l\'UX pour rassurer). Pages sur l\'engagement écologique et les matières.',
+                genaiStrategy: 'Contenu "destination + maillot" très structuré pour être cité par l\'IA lors de la planification de voyages ("Quel maillot prendre pour Mykonos ?").',
+                priorityScore: 7
             },
             {
                 id: 'card10',
                 client: 'Vilebrequin',
                 firstName: 'Léa',
                 age: 39,
-                name: "L'Acheteuse de Tendance 🏖️",
-                type: 'Bundle/Family Seeker',
-                profile: 'Mère de famille aisée organisant les tenues de vacances. Recherche activement des produits "Mini-Me" ou des ensembles.',
-                goal: 'Acheter des maillots assortis pour toute la famille (Père/Fils, Mère/Fille).',
-                pain: "Absence de pages agrégées pour les collections \"Famille\" ou les packs. L'expérience d'achat groupé est frustrante.",
-                contentStrategy: "Création de pages \"Collection Famille\" optimisées pour les mots-clés \"maillot assorti\". Optimisation de la recherche interne pour les termes \"duo\" ou \"famille\". Maillage interne fort entre les catégories Homme/Femme/Enfant.",
-                genaiStrategy: 'Structuration des collections "Famille" pour que l\'IA puisse proposer des ensembles coordonnés rapidement (Schema Collection ou balisage d\'un tableau de comparaison).',
-                priorityScore: 68
+                name: "La Coordonnée  ",
+                type: 'Acheteuse de collections familiales',
+                profile: 'Mère de famille aisée, organisée et connectée, planifie les tenues de vacances pour toute la famille. Recherche activement des ensembles coordonnés "Mini-Me" et des packs famille stylés.',
+                goal: 'Acheter des maillots assortis pour tous les membres de la famille (Parent-Enfant, Duo Mère/Fille ou Père/Fils) et faciliter la préparation des vacances avec style et cohérence.',
+                pain: "Absence de pages dédiées aux collections famille ou packs. Navigation frustrante pour visualiser et sélectionner facilement les ensembles coordonnés.",
+                contentStrategy: "Création de pages \"Collection Famille\" optimisées SEO avec mots-clés \"maillot assorti\". Lookbooks inspirants, filtres par âge et genre, et maillage interne fort entre catégories Homme/Femme/Enfant.",
+                genaiStrategy: 'Structuration des collections avec Schema "Collection" et tableaux comparatifs pour que les moteurs IA puissent proposer directement des ensembles coordonnés adaptés à chaque membre de la famille.',
+                priorityScore: 8
             },
             
             // --- Avis (Location de Voitures) ---
@@ -280,28 +279,28 @@ DOCTYPE html>
                 client: 'Avis',
                 firstName: 'David',
                 age: 52,
-                name: "L'Organisateur de Projets 🏢",
-                type: 'B2B/Complex Searcher',
-                profile: 'Responsable logistique ou chef de projet dans une grande entreprise. Recherche des solutions de location longue durée ou de flotte.',
+                name: "L'Organisateur  ",
+                type: 'Acheteur B2B',
+                profile: 'Chef de projet dans une grande entreprise. Recherche des solutions de location longue durée ou de flotte.',
                 goal: 'Louer des flottes ou des véhicules pour des événements professionnels (intentions B2B).',
                 pain: "Processus de devis complexe et lent. Manque de clarté sur les options d'assurance ou de long terme dédiées aux entreprises.",
                 contentStrategy: 'Landing pages dédiées aux offres B2B (Location Longue Durée, Flotte). Optimisation des formulaires pour la conversion B2B. Création de contenu sur les avantages fiscaux et contractuels (Intentions informationnelles B2B).',
-                genaiStrategy: "Structuration des offres B2B complexes (flottes, LLD) en tableaux comparatifs clairs pour l'extraction de données par l'IA. Assurer la visibilité des conditions via des balises sémantiques.",
-                priorityScore: 90
+                genaiStrategy: "Structuration des offres B2B complexes (flottes, LLD) clairs pour l'extraction de données par l'IA. Assurer la visibilité des conditions via des balises sémantiques.",
+                priorityScore: 9
             },
             {
                 id: 'card12',
                 client: 'Avis',
                 firstName: 'Nadia',
                 age: 34,
-                name: 'Le Touriste Digital 🗺️',
-                type: 'Mobile/Local Seeker',
-                profile: 'Vacancière ou voyageuse d\'affaires qui réserve tout via son smartphone et a besoin de rapidité et de localisation.',
+                name: 'La Touriste Digital  ',
+                type: 'Adepte de la location de voitures en vacances',
+                profile: 'Vacancière qui réserve tout via son smartphone et a besoin de rapidité et de localisation.',
                 goal: 'Trouver une voiture rapidement près de sa position (aéroport, gare) ou comparer les prix sur son mobile.',
                 pain: "Mauvaise expérience mobile (Core Web Vitals faible). Le moteur de recherche interne pour la comparaison des prix manque de transparence.",
                 contentStrategy: "Performance Core Web Vitals sur mobile (critique pour l'UX). Optimisation du moteur de recherche interne pour la comparaison rapide des offres.",
                 genaiStrategy: 'Optimisation pour la recherche vocale et en langage naturel (FAQ conversationnelles). Utilisation du Schema LocalBusiness pour le Store Locator afin d\'être visible dans les résultats AI locaux et mobiles.',
-                priorityScore: 83
+                priorityScore: 8
             }
         ];
 
@@ -323,10 +322,10 @@ DOCTYPE html>
             // Logo/Titre du Secret Santa
             backFace.innerHTML = `
                 <div class="text-4xl font-extrabold mb-4 shadow-text">🎁</div>
-                <h2 class="text-2xl font-black mb-1">SECRET SANTA PROJECT</h2>
+                <h2 class="text-2xl font-black mb-1">LES PERSONAS DE DIANA</h2>
                 <p class="text-lg font-medium italic">PERSONA SEO MYSTÈRE</p>
-                <div class="mt-8 text-sm font-light uppercase tracking-widest bg-white text-purple-700 py-1 px-3 rounded-full shadow-lg">
-                    Cliquez pour retourner !
+                <div class="mt-8 text-sm font-light uppercase tracking-widest bg-white text-indigo-400 py-1 px-3 rounded-full shadow-lg">
+                    Clique pour le découvrir !
                 </div>
             `;
 
@@ -335,16 +334,8 @@ DOCTYPE html>
             frontFace.className = 'card-face card-front p-4';
             
             // Couleur de l'entête basée sur le score de priorité
-            let headerColor = 'bg-gray-200';
-            if (persona.priorityScore >= 90) {
-                headerColor = 'bg-red-600'; // Priorité élevée
-            } else if (persona.priorityScore >= 80) {
-                headerColor = 'bg-yellow-600'; // Priorité moyenne-haute
-            } else if (persona.priorityScore >= 70) {
-                headerColor = 'bg-blue-600'; // Priorité moyenne
-            } else {
-                headerColor = 'bg-green-600'; // Priorité faible
-            }
+            // COULEUR UNIQUE GRIS ANTHRACITE CONSERVÉE POUR L'UNIFORMISATION
+            let headerColor = 'bg-slate-800'; 
 
             // Construction du contenu du recto de la carte (style Pokémon/Tutoriel)
             frontFace.innerHTML = `
@@ -367,28 +358,28 @@ DOCTYPE html>
                 <div class="p-4 flex-grow overflow-y-auto text-sm space-y-3">
                     <!-- Profil / Visage -->
                     <div class="border-b pb-2 border-gray-100">
-                        <p class="stats-label text-xs text-purple-600 uppercase">Profil & Visage (Inventé):</p>
+                        <p class="stats-label text-xs text-slate-500 uppercase">Profil (Inventé):</p>
                         <p class="text-gray-700 italic">${persona.profile}</p>
                     </div>
 
-                    <!-- Objectif Principal -->
+                    <!-- Objectif Principal (VERT CLAIR) -->
                     <div>
-                        <p class="stats-label text-xs text-blue-600 uppercase">Objectif SEO:</p>
+                        <p class="stats-label text-xs text-emerald-500 uppercase">Objectif SEO:</p>
                         <p class="text-gray-700">${persona.goal}</p>
                     </div>
-                    <!-- Pain Points -->
+                    <!-- Pain Points (ROUGE) -->
                     <div>
                         <p class="stats-label text-xs text-red-600 uppercase">Pain Points:</p>
                         <p class="text-gray-700">${persona.pain}</p>
                     </div>
-                    <!-- Stratégie Contenu -->
+                    <!-- Stratégie Contenu (BLEU INDIGO) -->
                     <div>
-                        <p class="stats-label text-xs text-green-600 uppercase">Stratégie Contenu (Comment l'attirer):</p>
+                        <p class="stats-label text-xs text-indigo-600 uppercase">Stratégie Contenu (Comment l'attirer):</p>
                         <p class="text-gray-700">${persona.contentStrategy}</p>
                     </div>
-                    <!-- Stratégie GEO (Référencement IA) -->
+                    <!-- Stratégie GEO (Référencement IA) (CYAN) -->
                     <div>
-                        <p class="stats-label text-xs text-orange-600 uppercase">Stratégie GEO (Référencement IA):</p>
+                        <p class="stats-label text-xs text-cyan-600 uppercase">Stratégie GEO (Référencement IA):</p>
                         <p class="text-gray-700">${persona.genaiStrategy}</p>
                     </div>
                 </div>
